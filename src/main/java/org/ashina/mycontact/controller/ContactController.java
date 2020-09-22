@@ -13,10 +13,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.validation.Valid;
 
 @Controller
 public class ContactController {
+
+    public static final Logger logger = LoggerFactory.getLogger(ContactController.class);
 
     @Autowired
     private ContactService contactService;
@@ -24,6 +29,7 @@ public class ContactController {
     @GetMapping("/contact")
     public String list(Model model) {
         System.out.println("access contact ");
+        logger.info("logger: access contact");
         model.addAttribute("contacts", contactService.findAll());
         System.out.println("list model: " + model.toString());
         return "list";
@@ -32,6 +38,8 @@ public class ContactController {
     @GetMapping("/contact/search")
     public String search(@RequestParam("term") String term, Model model) {
         System.out.println("search contact ");
+        logger.info("logger: search contact");
+
         if (StringUtils.isEmpty(term)) {
             return "redirect:/contact";
         }
@@ -43,6 +51,8 @@ public class ContactController {
     @GetMapping("/contact/add")
     public String add(Model model) {
         System.out.println("adding new contact id: ");
+//        logger.info("logger: adding new contact");
+
         model.addAttribute("contact", new Contact());
         return "form";
     }
@@ -50,6 +60,8 @@ public class ContactController {
     @GetMapping("/contact/{id}/edit")
     public String edit(@PathVariable("id") Integer id, Model model) {
         System.out.println("editing contact id: " + id);
+//        logger.info("editing contact id: " + id);
+
         model.addAttribute("contact", contactService.findOne(id));
         return "form";
     }
@@ -57,6 +69,8 @@ public class ContactController {
     @PostMapping("/contact/save")
     public String save(@Valid Contact contact, BindingResult result, RedirectAttributes redirect) {
         System.out.println("save contact: " + contact.toString());
+//        logger.info("save contact: " + contact.toString());
+
         if (result.hasErrors()) {
             System.out.println("error insert: " + result.toString());
             return "form";

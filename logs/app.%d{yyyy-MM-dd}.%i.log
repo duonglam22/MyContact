@@ -1,0 +1,3 @@
+2020-09-22 11:40:38,857 INFO org.ashina.mycontact.MycontactApplication [main] Starting MycontactApplication on lamdn-3668 with PID 9626 (/home/lamdn/sourceCode/java/springboot/mycontact/target/classes started by lamdn in /home/lamdn/sourceCode/java/springboot/mycontact)
+2020-09-22 11:40:38,859 INFO org.ashina.mycontact.MycontactApplication [main] No active profile set, falling back to default profiles: default
+2020-09-22 11:40:44,759 INFO org.ashina.mycontact.MycontactApplication [main] Started MycontactApplication in 7.169 seconds (JVM running for 8.693)
