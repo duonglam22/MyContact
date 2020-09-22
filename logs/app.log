@@ -1,0 +1,19 @@
+2020-09-22 11:34:01,832 INFO org.ashina.mycontact.MycontactApplication [main] Starting MycontactApplication on lamdn-3668 with PID 9335 (/home/lamdn/sourceCode/java/springboot/mycontact/target/classes started by lamdn in /home/lamdn/sourceCode/java/springboot/mycontact)
+2020-09-22 11:34:01,834 INFO org.ashina.mycontact.MycontactApplication [main] No active profile set, falling back to default profiles: default
+2020-09-22 11:34:04,869 INFO org.ashina.mycontact.MycontactApplication [main] Started MycontactApplication in 3.509 seconds (JVM running for 4.154)
+2020-09-22 11:34:45,922 INFO org.ashina.mycontact.MycontactApplication [main] Starting MycontactApplication on lamdn-3668 with PID 9452 (/home/lamdn/sourceCode/java/springboot/mycontact/target/classes started by lamdn in /home/lamdn/sourceCode/java/springboot/mycontact)
+2020-09-22 11:34:45,924 INFO org.ashina.mycontact.MycontactApplication [main] No active profile set, falling back to default profiles: default
+2020-09-22 11:34:48,921 INFO org.ashina.mycontact.MycontactApplication [main] Started MycontactApplication in 3.551 seconds (JVM running for 4.092)
+2020-09-22 11:34:49,288 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-1] logger: access contact
+2020-09-22 11:34:52,454 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-4] logger: search contact
+2020-09-22 11:37:05,095 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-6] logger: search contact
+2020-09-22 11:37:05,122 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-7] logger: access contact
+2020-09-22 13:37:46,165 INFO org.ashina.mycontact.MycontactApplication [main] Starting MycontactApplication on lamdn-3668 with PID 10504 (/home/lamdn/sourceCode/java/springboot/mycontact/target/classes started by lamdn in /home/lamdn/sourceCode/java/springboot/mycontact)
+2020-09-22 13:37:46,181 INFO org.ashina.mycontact.MycontactApplication [main] No active profile set, falling back to default profiles: default
+2020-09-22 13:37:56,445 INFO org.ashina.mycontact.MycontactApplication [main] Started MycontactApplication in 12.273 seconds (JVM running for 15.514)
+2020-09-22 13:37:56,465 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-1] logger: access contact
+2020-09-22 13:38:23,103 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-7] logger: access contact
+2020-09-22 13:39:36,113 INFO org.ashina.mycontact.MycontactApplication [main] Starting MycontactApplication on lamdn-3668 with PID 10611 (/home/lamdn/sourceCode/java/springboot/mycontact/target/classes started by lamdn in /home/lamdn/sourceCode/java/springboot/mycontact)
+2020-09-22 13:39:36,115 INFO org.ashina.mycontact.MycontactApplication [main] No active profile set, falling back to default profiles: default
+2020-09-22 13:39:38,788 INFO org.ashina.mycontact.MycontactApplication [main] Started MycontactApplication in 3.145 seconds (JVM running for 4.265)
+2020-09-22 13:39:47,999 INFO org.ashina.mycontact.controller.ContactController [http-nio-8081-exec-1] logger: access contact

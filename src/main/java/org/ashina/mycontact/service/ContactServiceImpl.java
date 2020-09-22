@@ -25,12 +25,10 @@ public class ContactServiceImpl implements ContactService {
         return contactRepository.findByEmailContaining(term);
     }
 
-
     @Override
     public Optional<Contact> findOne(Integer id) {
         return contactRepository.findById(id);
 //        return contactRepository.findOne(id);
-
     }
 
     @Override
