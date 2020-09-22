@@ -23,12 +23,15 @@ public class ContactController {
 
     @GetMapping("/contact")
     public String list(Model model) {
+        System.out.println("access contact ");
         model.addAttribute("contacts", contactService.findAll());
+        System.out.println("list model: " + model.toString());
         return "list";
     }
 
     @GetMapping("/contact/search")
     public String search(@RequestParam("term") String term, Model model) {
+        System.out.println("search contact ");
         if (StringUtils.isEmpty(term)) {
             return "redirect:/contact";
         }
@@ -39,19 +42,21 @@ public class ContactController {
 
     @GetMapping("/contact/add")
     public String add(Model model) {
+        System.out.println("adding new contact id: ");
         model.addAttribute("contact", new Contact());
         return "form";
     }
 
     @GetMapping("/contact/{id}/edit")
     public String edit(@PathVariable("id") Integer id, Model model) {
+        System.out.println("editing contact id: " + id);
         model.addAttribute("contact", contactService.findOne(id));
         return "form";
     }
 
     @PostMapping("/contact/save")
     public String save(@Valid Contact contact, BindingResult result, RedirectAttributes redirect) {
-        System.out.println("insert new contact: " + contact.toString());
+        System.out.println("save contact: " + contact.toString());
         if (result.hasErrors()) {
             System.out.println("error insert: " + result.toString());
             return "form";
@@ -63,6 +68,7 @@ public class ContactController {
 
     @GetMapping("/contact/{id}/delete")
     public String delete(@PathVariable int id, RedirectAttributes redirect) {
+        System.out.println("delete contact id: " + id);
         contactService.delete(id);
         redirect.addFlashAttribute("successMessage", "Deleted contact successfully!");
         return "redirect:/contact";

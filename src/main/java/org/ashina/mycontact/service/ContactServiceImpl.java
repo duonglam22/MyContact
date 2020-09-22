@@ -21,8 +21,10 @@ public class ContactServiceImpl implements ContactService {
 
     @Override
     public List<Contact> search(String term) {
-        return contactRepository.findByNameContaining(term);
+//        return contactRepository.findByNameContaining(term);
+        return contactRepository.findByEmailContaining(term);
     }
+
 
     @Override
     public Optional<Contact> findOne(Integer id) {

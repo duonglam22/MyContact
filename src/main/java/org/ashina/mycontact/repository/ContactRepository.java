@@ -10,5 +10,6 @@ import java.util.List;
 public interface ContactRepository extends CrudRepository<Contact, Integer> {
 
     List<Contact> findByNameContaining(String term);
+    List<Contact> findByEmailContaining(String email);
 
 }
